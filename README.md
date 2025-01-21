@@ -8,7 +8,7 @@ Hangman Game with Python 🎮 A simple, interactive word-guessing game built wit
 
 🚀 How to Run the Game
 Clone the Repository:
-git clone https://github.com/Sowmya1431/hangman-with-python.git
+git clone https://github.com/Sowmya1431/Hangman_game.git
 cd hangman-with-python
 Run the Script: Make sure you have Python installed. Then, execute the game:
 
