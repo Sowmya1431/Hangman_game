@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <h1>Hangman</h1>
+    <p>Word: {{ " ".join(guessed) }}</p>
+    <p>Attempts left: {{ attempts }}</p>
+    <p>{{ message }}</p>
+    {% if "_" in guessed and attempts > 0 %}
+        <form method="POST">
+            <label for="guess">Enter a letter:</label>
+            <input type="text" name="guess" maxlength="1" required>
+            <button type="submit">Submit</button>
+        </form>
+    {% else %}
+        <p>The word was: {{ word }}</p>
+        <a href="/start"><button>Play Again</button></a>
+    {% endif %}
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f0f0f0; /* Light gray background */
+            background-image: url("/static/Sparkle-PNG-Photo.png"); /* Replace with your image path */
+            background-size: cover; 
+            animation: sparkles 3s infinite;
+        }
+        @keyframes sparkles {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 500px 500px; 
+            }
+        }
+        p {
+            margin-bottom: 15px;
+            color: #555; /* Slightly lighter text color */
+        }
+        button:hover {
+            transform: scale(0.95); 
+            background-color: #3e8e41; 
+        }
+
+    </style>
+</body>
+</html>
+

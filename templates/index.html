@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+</head>
+<body>
+    <h1>Welcome to Hangman!</h1>
+    <p>Click the button below to start the game.</p>
+    <a href="/start"><button>Start Game</button></a>
+    <style>
+
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            background-image: url("/static/Sparkle-PNG-Photo.png"); /* Use Flask's static path */
+            background-size: cover; /* Ensure the image covers the whole background */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+
+        h1 {
+            margin-top: 50px;
+            font-size: 5rem;
+            color: #333;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        h1:hover {
+            transform: scale(0.95);
+            color: #5E239D; 
+        }
+
+        button {
+            margin-top: 50px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s; 
+        }
+        button:hover {
+            transform: scale(0.95); 
+            background-color: #3e8e41; 
+        }
+
+
+
+    </style>
+</body>
+</html>
